@@ -1,0 +1,29 @@
+{
+  "name": "core-server",
+  "version": "1.0.0",
+  "description": "core api server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiosklabs/core-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "kiosk",
+    "labs",
+    "core",
+    "api"
+  ],
+  "author": "Wely Jesch Sabalilag",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kiosklabs/core-api/issues"
+  },
+  "homepage": "https://github.com/kiosklabs/core-api#readme",
+  "dependencies": {
+    "hapi": "^14.1.0"
+  }
+}
