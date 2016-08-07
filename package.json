@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/kiosklabs/core-api#readme",
   "dependencies": {
+    "good": "^7.0.1",
+    "good-console": "^6.1.2",
+    "good-squeeze": "^4.0.0",
     "hapi": "^14.1.0"
   }
 }
