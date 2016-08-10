@@ -1,4 +1,4 @@
-'use strict';
+f'use strict';
 
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
@@ -12,7 +12,7 @@ server.route({
     method: 'GET',
     path: '/',
     handler: function (request, reply) {
-        reply('Hello, Heroku!');
+        reply('Hello, ʕ•㉨•ʔ!');
     }
 });
 
