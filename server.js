@@ -3,7 +3,9 @@
 const Glue = require('glue');
 const Hapi = require('hapi');
 const cluster = require('cluster');
-const numCPUs = require('os').cpus().length;
+// const numCPUs = require('os').cpus().length;
+// limit processor usage to prevent R10 error
+const numCPUs = 4;
 var manifest = require('./config/manifest.json');
 
 manifest.connections.port = process.env.PORT || 8000;
