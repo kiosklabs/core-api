@@ -6,6 +6,9 @@
   "bugs": {
     "url": "https://github.com/kiosklabs/core-api/issues"
   },
+   "engines": {
+    "node": "5.9.1"
+  },  
   "main": "server.js",
   "scripts": {
     "test": "./node_modules/lab/bin/lab -v",
