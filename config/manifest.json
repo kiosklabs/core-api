@@ -2,7 +2,7 @@
   "connections": [
     {
       "host": "localhost",
-      "port": 80,
+      "port": 8000,
       "routes": {
         "cors": true
       },

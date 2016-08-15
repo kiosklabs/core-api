@@ -6,8 +6,7 @@ const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
 var manifest = require('./config/manifest.json');
 
-manifest.connections.port = process.env.PORT || 80;
-
+manifest.connections.port = process.env.PORT || 8000;
 if (!process.env.PRODUCTION) {
   manifest.registrations.push({
     "plugin": {
