@@ -1,6 +1,14 @@
 # Core API
 Kiosk Labs Core API Boilerplate
 
+- User authentication, Heroku integration, and Tracking system
+- [ ] User Authentication
+- [x] Heroku Integration
+- [x] Multicore
+- [x] Tracking System
+- [ ] MongoDB integration
+- [ ] Update unit tests
+
 ## Core Stack
 
 - **Node.js** - [http://nodejs.org/](http://nodejs.org/)
@@ -10,7 +18,7 @@ Kiosk Labs Core API Boilerplate
 
 Clone project and install dependencies:
 ```bash
-$ git clone https://github.com/rjmreis/hapi-api.git
+$ git clone https://github.com/kiosklabs/core-api.git
 $ cd hapi-api
 $ npm install
 ```
