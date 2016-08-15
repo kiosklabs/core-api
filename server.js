@@ -2,9 +2,9 @@
 
 const Glue = require('glue');
 const Hapi = require('hapi');
-const manifest = require('./config/manifest.json');
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
+var manifest = require('./config/manifest.json');
 
 manifest.connections.port = process.env.PORT || 80;
 
