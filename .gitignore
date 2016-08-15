@@ -1,4 +1,12 @@
+<<<<<<< ff9294b3859715891e2d195b7c36d74b8706b79d
 /node_modules
 npm-debug.log
 .DS_Store
 /*.env
+=======
+npm-debug.log
+node_modules
+
+.vscode
+typings
+>>>>>>> revamp api architecture

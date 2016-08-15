@@ -1,4 +1,5 @@
 {
+<<<<<<< ff9294b3859715891e2d195b7c36d74b8706b79d
   "name": "core-server",
   "version": "1.0.0",
   "description": "core api server",
@@ -34,3 +35,48 @@
     "node": "^4.9.8"
   }
 }
+=======
+  "name": "Kiosk-Labs-Core-API",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Core API server for Kiosk Labs",
+  "bugs": {
+    "url": "https://github.com/rjmreis/hapi-api/issues"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/lab/bin/lab -v",
+    "start": "node server.js",
+    "lint": "eslint . --ext .js --ignore node_modules/**"
+  },
+  "author": "Wely Jesch Sabalilag",
+  "homepage": "https://kiosklabs.github.io",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiosklabs/core-api-server.git"
+  },
+  "keywords": [
+    "hapi"
+  ],
+  "dependencies": {
+    "glue": "^3.3.0",
+    "hapi": "^14.1.0",
+    "hapi-auth-jwt2": "^7.0.1",
+    "good": "^7.0.1",
+    "good-console": "^6.1.2"
+  },
+  "devDependencies": {
+    "blipp": "^2.3.0",
+    "code": "^3.0.2",
+    "eslint": "^3.2.2",
+    "lab": "^10.9.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es6": true
+    }
+  }
+}
+>>>>>>> revamp api architecture
