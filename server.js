@@ -17,23 +17,24 @@ if (!process.env.PRODUCTION) {
   });
 }
 
-Glue.compose(manifest, { relativeTo: __dirname }, (err, server) => {
-  if (err) {
-    console.log('server.register err:', err);
+if (cluster.isMaster) {
+  // Fork workers.
+  for (var i = 0; i < numCPUs; i++) {
+    cluster.fork();
   }
 
-  if (cluster.isMaster) {
-    // Fork workers.
-    for (var i = 0; i < numCPUs; i++) {
-      cluster.fork();
+  cluster.on('exit', (worker, code, signal) => {
+    console.log(`worker ${worker.process.pid} died`);
+  });
+
+} else {
+  Glue.compose(manifest, { relativeTo: __dirname }, (err, server) => {
+    if (err) {
+      console.log('server.register err:', err);
     }
 
-    cluster.on('exit', (worker, code, signal) => {
-      console.log(`worker ${worker.process.pid} died`);
-    });
-  } else {
       server.start(() => {
         console.log('✅  Server is listening on ' + server.info.uri.toLowerCase());
       });
-  }
-});
+  });
+}
