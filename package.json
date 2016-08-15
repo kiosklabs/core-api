@@ -1,47 +1,10 @@
 {
-<<<<<<< ff9294b3859715891e2d195b7c36d74b8706b79d
   "name": "core-server",
-  "version": "1.0.0",
-  "description": "core api server",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kiosklabs/core-api.git"
-  },
-  "keywords": [
-    "nodejs",
-    "kiosk",
-    "labs",
-    "core",
-    "api"
-  ],
-  "author": "Wely Jesch Sabalilag",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kiosklabs/core-api/issues"
-  },
-  "homepage": "https://github.com/kiosklabs/core-api#readme",
-  "dependencies": {
-    "good": "^7.0.1",
-    "good-console": "^6.1.2",
-    "good-squeeze": "^4.0.0",
-    "hapi": "^14.1.0",
-    "mongodb": "^2.2.5"
-  },
-  "engines": {
-    "node": "^4.9.8"
-  }
-}
-=======
-  "name": "Kiosk-Labs-Core-API",
   "version": "1.0.0",
   "license": "MIT",
   "description": "Core API server for Kiosk Labs",
   "bugs": {
-    "url": "https://github.com/rjmreis/hapi-api/issues"
+    "url": "https://github.com/kiosklabs/core-api/issues"
   },
   "main": "server.js",
   "scripts": {
@@ -54,10 +17,15 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/kiosklabs/core-api-server.git"
+    "url": "https://github.com/kiosklabs/core-api.git"
   },
   "keywords": [
-    "hapi"
+    "hapi",
+    "nodejs",
+    "kiosk",
+    "labs",
+    "core",
+    "api"
   ],
   "dependencies": {
     "glue": "^3.3.0",
@@ -79,4 +47,3 @@
     }
   }
 }
->>>>>>> revamp api architecture

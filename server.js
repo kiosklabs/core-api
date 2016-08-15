@@ -1,17 +1,5 @@
 'use strict';
 
-const cluster = require('cluster');
-const numCPUs = require('os').cpus().length;
-const Hapi = require('hapi');
-const Good = require('good');
-
-const server = new Hapi.Server();
-server.connection({ port: (process.env.PORT || 5000) });
-
-}
-=======
-'use strict';
-
 const Glue = require('glue');
 const Hapi = require('hapi');
 const manifest = require('./config/manifest.json');
@@ -47,4 +35,3 @@ Glue.compose(manifest, { relativeTo: __dirname }, (err, server) => {
       });
   }
 });
->>>>>>> revamp api architecture
