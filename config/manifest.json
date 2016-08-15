@@ -1,15 +1,5 @@
 {
   "connections": [
-    {
-      "host": "localhost",
-      "port": 8000,
-      "routes": {
-        "cors": true
-      },
-      "router": {
-        "stripTrailingSlash": true
-      }
-    }
   ],
   "registrations": [
     {

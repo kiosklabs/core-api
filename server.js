@@ -8,7 +8,18 @@ const cluster = require('cluster');
 const numCPUs = 4;
 var manifest = require('./config/manifest.json');
 
-manifest.connections.port = process.env.PORT || 8000;
+manifest.connections.push(
+  {
+    "host": "localhost",
+    "port":  process.env.PORT || 3000,
+    "routes": {
+      "cors": true
+    },
+    "router": {
+      "stripTrailingSlash": true
+    }
+  });
+
 if (!process.env.PRODUCTION) {
   manifest.registrations.push({
     "plugin": {
